@@ -180,7 +180,7 @@ export default function Contact() {
             <p style={sectionLabel}>Basic Information</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-2.5">
               <input name="fullName" placeholder="Full Name" value={formData.fullName} onChange={handleChange} style={inputStyle} />
-              <input name="company" placeholder="Company / Planner Name" value={formData.company} onChange={handleChange} style={inputStyle} />
+              <input name="company" placeholder="Company / Planner Name" value={formData.company} onChange={handleChange} style={inputStyle} /> 
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mb-6">
               <input name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} style={inputStyle} />
