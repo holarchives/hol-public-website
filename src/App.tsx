@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { Routes, Route, useLocation, useNavigationType } from 'react-router'
 import { AnimatePresence, motion } from 'framer-motion'
+import { Analytics } from '@vercel/analytics/react'
 import Header from './sections/Header'
 import BrandReveal from './sections/BrandReveal'
 import Hero from './sections/Hero'
@@ -180,6 +181,7 @@ function App() {
 
   return (
     <ThemeProvider>
+      <Analytics />
       <Preloader />
       {location.pathname !== '/archive' && <Header scrollRef={scrollRef} />}
       <AnimatePresence mode="wait">
